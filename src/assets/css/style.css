@@ -1,0 +1,586 @@
+_______________________________________________--------------------------------
+/* Global */
+/* _______________________________________________-------------------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eaf2ff;
+  font-family: "Rajdhani", monospace;
+}
+
+.row {
+  margin-right: 0px;
+}
+
+.comp-view {
+  margin: 5rem 0 0 0;
+}
+
+.breadcrumb-item i {
+  margin-right: 10px;
+  margin-top: 4px;
+  color: #6d7fcc;
+}
+
+.breadcrumb-item img {
+  margin-right: 10px;
+  margin-top: 4px;
+  width: 35px;
+}
+
+.breadcrumb {
+  background-color: transparent;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.breadcrumb-item a {
+  text-decoration: none;
+  color: #000;
+}
+
+
+/* _______________________________________________-------------------------------- */
+
+/* Navbar */
+/* _______________________________________________-------------------------------- */
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+nav.navbar {
+  padding: 0 1rem;
+}
+
+.navbar-brand img {
+  width: 3.5rem;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+li.nav-item {
+  margin-right: 1rem;
+}
+
+li.nav-item>.nav-link {
+  color: rgba(0, 0, 0, .9);
+  font-weight: bold;
+}
+
+ul.navbar-nav {
+  display: flex;
+  flex-direction: row !important;
+}
+
+img.img-admin {
+  max-width: 28px;
+  border-radius: 43%;
+  height: auto;
+  margin-right: 5px;
+}
+
+form.form-inline {
+  margin-right: -2rem;
+  padding: 1rem 0;
+}
+
+form.form-inline input:focus {
+  border: 2px solid #7386d5;
+  box-shadow: none;
+}
+
+button.btn-search {
+  /* background: #7386d5; */
+  color: #7386d5;
+  position: relative;
+  right: 2.45rem;
+}
+
+.nav-item .dropdown-menu a:hover {
+  background: #EAF2FF;
+}
+
+.nav-item .dropdown-menu a.logout {
+  background-color: #7386d5;
+  color: #fff;
+}
+
+/* _______________________________________________-------------------------------- */
+
+/* Sidebar */
+/* _______________________________________________-------------------------------- */
+
+
+.list-unstyled a,
+.list-unstyled a:hover,
+.list-unstyled a:focus {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.wrapper>#sidebar {
+  min-width: 270px;
+  max-width: 292px;
+  background: #fafafa;
+  color: rgb(5, 5, 5);
+  transition: all 0.3s;
+  position: fixed;
+  z-index: 1;
+  top: 5rem;
+}
+
+#sidebar .sidebar-header {
+  padding: 17px;
+  background: #fafafa;
+  margin-bottom: -1.2rem;
+}
+
+.sidebar-header h3 {
+  font-size: 30px;
+  color: #6D7FCC;
+}
+
+#sidebar .nav-item .nav-link {
+  font-weight: 200;
+  width: 16.8rem;
+}
+
+#sidebar .nav-pills .nav-link.active,
+#sidebar .nav-pills .show>.nav-link {
+  color: #fafafa;
+  background-color: #7386d5;
+}
+
+.list-unstyled i {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.btn-logout i {
+  font-size: 20px;
+}
+
+#sidebar ul {
+  /* color: rgb(5, 5, 5); */
+  padding: 10px;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 15px;
+  display: block;
+}
+
+#sidebar ul li a:hover {
+  color: black;
+  background: #EAF2FF;
+}
+
+/* #sidebar ul li.active a,
+a[aria-expanded="true"] {
+  color: rgb(5, 5, 5);
+  background: #fafafa;
+}
+
+#sidebar ul li.active a,
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+#sidebar ul li.active a,
+a[aria-expanded="false"]::before,
+a[aria-expanded="true"]::before {
+  content: "\f078";
+  font-family: "FontAwesome";
+  display: block;
+  position: absolute;
+  right: 20px;
+  font-size: 0.6em;
+}
+
+#sidebar ul li.active a,
+a[aria-expanded="true"]::before {
+  content: "\f077";
+} */
+
+ul.CTAs {
+  position: relative;
+  bottom: 2.5rem;
+  margin: 2rem;
+}
+
+ul.CTAs a {
+  text-align: center;
+  font-size: 1em !important;
+  display: block;
+  border-radius: 5px;
+}
+
+a.btn-logout,
+a.btn-logout:hover {
+  background: #6d7fcc !important;
+  color: #fff !important;
+}
+
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -240px;
+  }
+
+  #sidebarCollapse span,
+  h3 {
+    display: none;
+  }
+
+  .list-unstyled i {
+    font-size: 1.5rem;
+    margin-left: 233px;
+  }
+
+  .list-unstyled span {
+    margin-left: -30rem;
+  }
+
+  a.btn-logout {
+    margin: 0 0 0 30rem;
+  }
+
+  .btn-logout i {
+    font-size: 2rem;
+    color: #6d7fcc;
+    margin-left: -32rem !important;
+    position: relative;
+    bottom: 2rem;
+  }
+
+  a.btn-logout {
+    background-color: inherit !important;
+  }
+
+  span.log-out {
+    display: none;
+  }
+
+  #sidebar.active {
+    margin-left: 0;
+  }
+
+}
+
+/* _______________________________________________-------------------------------- */
+
+/* Personne Physique */
+
+/* _______________________________________________-------------------------------- */
+
+/* 1 LIST PERSONNE PHYSIQYE: */
+
+.table-crud {
+  background-color: #fff;
+  width: 100%;
+  padding: 17px;
+}
+
+.table-crud-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.crud-button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 27%;
+  margin-bottom: -11px;
+}
+
+
+.table-crud-header a.btn-ajouter {
+  background-color: #7386d5;
+  color: #fff;
+  height: 2rem;
+  padding: 4px 10px;
+  border-radius: 7%;
+  text-decoration: none;
+}
+
+.table-crud-header .data-table {
+  width: 30%;
+}
+
+.custom-select:focus {
+  box-shadow: none;
+  border: 1px solid #6d7fcc;
+}
+
+.custom-select>option:hover {
+  background-color: #6d7fcc;
+}
+
+.search input.form-control[type="text"] {
+  box-shadow: 0 1px 0 0 #7386d5;
+  border: none;
+  border-radius: 0%;
+}
+
+form.search i.fa {
+  color: #7386d5;
+  position: relative;
+  right: 2rem;
+  top: 0rem;
+}
+
+thead tr {
+  background-color: #fff !important;
+}
+
+th.id-client {
+  color: #7386d5;
+}
+
+.crud-body tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+td.actions-btn {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+td.actions-btn a {
+  font-size: 1.2rem;
+}
+
+td.actions-btn .show-btn {
+  color: #d3af54;
+}
+
+td.actions-btn .edit-btn {
+  color: #72d61b;
+}
+
+td.actions-btn .delete-btn {
+  color: #f42929;
+}
+
+
+
+/* 2-SHOW personne physique */
+
+.table-show {
+  background-color: #fff;
+  width: 100%;
+}
+
+.show-personne-physique .container {
+  padding-bottom: 18px;
+}
+
+.show-personne-physique .row {
+  margin: 20px auto;
+}
+
+.tbody-color {
+  border: #6d7fcc 1px solid;
+}
+
+.tbody-color tr th {
+  border-bottom: 1px solid #6d7fcc;
+  padding: 0 0 0 8px;
+  /* font-weight: 500; */
+}
+
+/* .tbody-color tr td {
+  border-bottom: 1px solid #6d7fcc;
+  padding: 0 23px;
+} */
+
+thead tr th.title {
+  color: #fff;
+  background-color: #6d7fcc;
+}
+
+.header-butn {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  padding: 1rem 0;
+}
+
+.header-butn a {
+  color: #fff;
+  font-weight: 500;
+}
+
+.header-butn .btn-dark {
+  margin-right: 1.9rem;
+}
+
+
+/* _______________________________________________-------------------------------- */
+
+/* Rechreche */
+
+/* _______________________________________________-------------------------------- */
+
+.form-recherche {
+  margin-top: -18px;
+}
+
+.form-recherche .button-recherche {
+  margin: 1rem 10rem 0 27rem !important;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.button-recherche .btn-default {
+  color: #f8f9fa;
+  background-color: #7386d5;
+  margin: 0 13px;
+}
+
+.form-recherche.form-row>.col,
+.form-recherche .form-row>[class*="col-"] {
+  margin: 0;
+}
+
+fieldset.fieldset-recherche {
+  padding: 0px 43rem 0.6rem 3rem;
+  margin: 0px 0rem 0 0rem;
+  border: 1px solid black;
+  background-color: #fff;
+  margin-bottom: 2rem;
+}
+
+fieldset legend {
+  display: flex;
+  justify-content: space-evenly;
+  color: #7386d5;
+}
+
+/* _______________________________________________-------------------------------- */
+
+/* pagination */
+
+/* _______________________________________________-------------------------------- */
+
+.pagination {
+  padding: 1rem;
+}
+
+.pagination .movement a {
+  color: black;
+}
+
+li.page-item a {
+  color: #7386d5;
+  font-weight: bold;
+}
+
+li.page-item a:hover {
+  color: black;
+}
+
+
+/* _______________________________________________-------------------------------- */
+
+/* TABLE NOMENCLATURES */
+
+/* _______________________________________________-------------------------------- */
+
+/* 1- Show all Tables: */
+.card-forma {
+  padding-bottom: 10px;
+}
+
+.card-forma a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+}
+.card-forma .card-body{
+  padding: 1rem!important;
+}
+.card-forma .card-body img{
+  width: 26%;
+}
+.card-forma:hover {
+  background-color: #6d7fcc;
+}
+
+h2.card-title {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.last-card {
+  justify-content: center;
+}
+
+/* 2-ville */
+.table-crud>.form-ajouter {
+  justify-content: center;
+  margin-left: 4.6rem;
+}
+
+.table-crud>.search-select {
+  display: flex;
+  justify-content: space-between;
+}
+
+.table-crud .input-group {
+  align-items: center;
+  margin: 18px 20px;
+}
+
+/* ACTIVITES */
+.button-recherche>.btn-light {
+  color: #f8f9fa;
+  background-color: #7386d5;
+  margin: 30px 14px;
+}
+
+/* _______________________________________________-------------------------------- */
+
+/* FOOTER */
+
+/* _______________________________________________-------------------------------- */
+
+footer.footer {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  background-color: #fafafa;
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0 auto;
+}
+
+.footer .name-app {
+  color: #6D7FCC;
+  font-weight: bold;
+}
+
+.footer-link a.company-name {
+  color: black;
+  font-weight: bolder;
+  text-decoration: none;
+
+}
+
+.footer-link i.fa-heart-o {
+  color: #6D7FCC;
+  font-weight: bold;
+
+}

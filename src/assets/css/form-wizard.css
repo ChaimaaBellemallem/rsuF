@@ -1,0 +1,33 @@
+.wizard h2 {
+  margin: 0 0 2.8rem -2rem;
+  font-size: 23px;
+}
+.wizard-header {
+  display: none;
+}
+.wizard-navigation {
+  margin-right: 2rem;
+}
+.panel-body pre {
+  background-color: #fff;
+  color: #6d7fcc;
+  font-size: .9rem;
+  text-align: left;
+}
+.panel-body i {
+  font-size: 2rem;
+  position: absolute;
+  left: 0;
+  bottom: 10.3rem;
+  font-weight: bold;
+  color: green;
+}
+fieldset{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.errors span{
+  color: #d64253;
+}
